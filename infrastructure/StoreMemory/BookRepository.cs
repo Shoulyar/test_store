@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace StoreMemory
 {
-    public class BookRepository : IBookRepository
+    public class bookRepository : IBookRepository
 
     {
         private readonly Book[] books = new[]

@@ -13,9 +13,9 @@ namespace Store.Web.Controllers
         public SearchController(IBookRepository bookRepository) {
             this.bookRepository = bookRepository;
         }
-        public IActionResult Index(string quary)
+        public IActionResult Index(string query)
         {
-            var books = bookRepository.GetAllByTitle(quary);
+            var books = bookRepository.GetAllByTitle(query);
             return View(books);
         }
     }
