@@ -9,5 +9,8 @@
 <p>@Model.Description</p>
 <p>Price: <strong>@Model.Price</strong></p>
 
-    </tbody>
-</table>
+<form action="@Url.Action("Add", "Cart")" method="post">
+    <input type="hidden" name="id" value="@Model.Id"/>
+    <button class="btn btn-outline-success" type="submit">To cart</button>
+
+</form>
